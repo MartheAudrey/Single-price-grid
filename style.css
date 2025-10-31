@@ -1,0 +1,111 @@
+:root{
+    /*Neutral colors*/
+    --clr-gray: hsl(218, 22%, 67%);
+    --clr-teal: hsl(204, 43%, 93%);
+    /*Section's background colors*/
+    --clr-teal500: hsl(179, 62%, 43%);
+    --clr-green400: hsl(71, 73%, 54%);
+    --clr-teal400: hsl(179, 62%, 50%);
+    
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--clr-teal);
+    font-size: clamp(0.75rem, 0.679rem + 0.36vw, 1rem);
+    height: 100%;
+    color: var(--clr-teal);
+    margin-block: 5rem;
+    font-family: "karla", sans-serif;
+    font-weight: var(--fw-normal);
+}
+
+.wrapper{
+    margin-inline: auto;
+    max-width: 700px;
+    border-radius: 0.5rem;
+}
+
+.container{
+    padding-inline: 1rem;
+    padding-block: 1.5rem;
+    display: grid;
+    gap: 1rem;
+}
+
+/*Utilities*/
+.flex-group{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.intro__section{
+    color: var(--clr-gray);
+    background-color: white;
+}
+
+.intro__title{
+    color: var(--clr-teal500);
+    font-size: clamp(1.5rem, 1.357rem + 0.71vw, 2.5rem);
+}
+
+.intro__subtittle{
+    color: var(--clr-green400);
+}
+
+.title{
+    font-size: clamp(1.25rem, 1.107rem + 0.71vw, 1.75rem);
+    font-weight: var(--fw-bold);
+}
+
+.subscription{
+    background-color: var(--clr-teal500);
+}
+
+#subs__price{
+    font-size: 25px;
+    font-weight: var(--fw-bold);
+}
+
+#subs__frequency{
+    opacity: 0.8;
+}
+
+button{
+    color:inherit;
+    background-color: var(--clr-green400);
+    border: none;
+    border-radius: 5px;
+    padding-block: 0.6rem;
+}
+
+.advantages{
+    background-color: var(--clr-teal400);
+}
+
+.advantages ul{
+    list-style-type: none;
+}
+
+footer{
+    margin-top: 2rem;
+    color: var(--clr-gray);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 450px){
+    .details__section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
